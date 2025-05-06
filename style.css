@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #caa6ed, #8a00e5);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 40px;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+}
+
+#emoji-input {
+  max-width: 80px;
+  text-align: center;
+}
+
+button {
+  background-color: #560473;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #eb5c41;
+}
+
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 20px;
+}
+
+.roadmap::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: white;
+}
+
+.checkpoint {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 40px;
+}
+
+.checkpoint::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 11px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  border: 4px solid #4e0165;
+}
+
+.checkpoint.completed::before {
+  background: #cc4cfb;
+  border-color: #4a014f;
+}
+
+.checkpoint span {
+  font-size: 18px;
+  color: #f2f4f2;
+}
+
+.complete-btn {
+  margin-left: 10px;
+  padding: 4px 10px;
+  background-color: #246633;
+  color: rgb(246, 248, 247);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
